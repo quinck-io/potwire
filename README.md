@@ -4,6 +4,8 @@ Potwire (Protobufs Over The Wire) is a concept for achieving **type-safe** full-
 
 The goal of potwire is to provide a fast, standard, and safe method for data transfer between web or mobile clients and servers.
 
+Type safety is achieved by using `.proto`  files to define data structures and services, and **generating client and server code** from these definitions. This ensures that requests and response are used correctly on both sides.
+
 # Overview
 
 ## Potwire VS REST
