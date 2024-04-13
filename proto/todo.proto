@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package todo;
+
+message Todo {
+  string id = 1;
+  string text = 2;
+  bool completed = 3;
+}
+
+service TodoService {
+  rpc AddTodo (Todo) returns (Todo);
+  rpc GetTodos (Empty) returns (GetTodosResponse);
+  rpc GetTodoById (GetTodoByIdRequest) returns (Todo);  // Optional
+  rpc MarkCompleted (MarkCompletedRequest) returns (Todo);  // Optional
+}
+
+message Empty {}
+
+message GetTodosResponse {
+  repeated Todo todos = 1;
+}
+
+message GetTodoByIdRequest {
+  string id = 1;
+}
+
+message MarkCompletedRequest {
+  string id = 1;
+}
