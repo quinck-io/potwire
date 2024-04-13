@@ -6,6 +6,8 @@ The goal of potwire is to provide a fast, standard, and safe method for data tra
 
 Type safety is achieved by using `.proto`  files to define data structures and services, and **generating client and server code** from these definitions. This ensures that requests and response are used correctly on both sides.
 
+![diagram](https://github.com/quinck-io/potwire/assets/119496044/d1aa8fb0-3c02-4f9c-afac-26f82f80d834)
+
 # Overview
 
 ## Potwire VS REST
